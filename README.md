@@ -12,8 +12,7 @@
   <a href="#features">Features</a> •
   <a href="#installation">Installation</a> •
   <a href="#supabase-setup">Supabase Setup</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#contributing">Contributing</a>
+  <a href="#usage">Usage</a>
 </p>
 
 <p align="center">
@@ -74,10 +73,10 @@
 1. **Clone & Install**
 ```bash
 # Clone the repository
-git clone https://github.com/sefagur/taskero.git
+git clone https://github.com/sefagur/react-supabase-kanban.git
 
 # Navigate to project
-cd taskero
+cd react-supabase-kanban
 
 # Install dependencies
 npm install
