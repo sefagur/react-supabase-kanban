@@ -5,7 +5,7 @@
 ### Modern Task Management System with Real-time Updates
 
 <p align="center">
-  <img src="![KanbanPage](https://github.com/user-attachments/assets/26dd7592-7aeb-4560-96db-874abcb9fb61)" alt="Dashboard" width="800"/>
+  <img src="https://github.com/user-attachments/assets/26dd7592-7aeb-4560-96db-874abcb9fb61" alt="Dashboard" width="800"/>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 ## ✨ Features
 
 <div align="center">
-  <img src="![RegisterPage](https://github.com/user-attachments/assets/52a21c8e-9c0b-46e2-9e1d-d437b0ef5585)" alt="Features" width="800"/>
+  <img src="https://github.com/user-attachments/assets/52a21c8e-9c0b-46e2-9e1d-d437b0ef5585" alt="Features" width="800"/>
 </div>
 
 ### 🔐 Authentication
@@ -50,7 +50,7 @@
 - Real-time updates
 
 <div align="center">
-  <img src="![MobilePage](https://github.com/user-attachments/assets/1bf5a158-18bb-45ad-86dd-d0bed719f1ee)" alt="Mobile View" width="300"/>
+  <img src="https://github.com/user-attachments/assets/1bf5a158-18bb-45ad-86dd-d0bed719f1ee" alt="Mobile View" width="300"/>
   <p><em>Responsive Mobile View</em></p>
 </div>
 
@@ -95,7 +95,7 @@ npm start
 ```
 
 <div align="center">
-  <img src="![TaskModal](https://github.com/user-attachments/assets/dedb3306-2532-4302-9bb0-33116ff4b7be)" alt="Setup Guide" width="600"/>
+  <img src="https://github.com/user-attachments/assets/dedb3306-2532-4302-9bb0-33116ff4b7be" alt="Setup Guide" width="600"/>
   <p><em>Visual Setup Guide</em></p>
 </div>
 
