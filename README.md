@@ -2,14 +2,10 @@
 
 # 🎯 Taskero
 
-<p align="center">
-  <img src="screenshots/logo.png" alt="Taskero Logo" width="200"/>
-</p>
-
 ### Modern Task Management System with Real-time Updates
 
 <p align="center">
-  <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
+  <img src="![KanbanPage](https://github.com/user-attachments/assets/26dd7592-7aeb-4560-96db-874abcb9fb61)" alt="Dashboard" width="800"/>
 </p>
 
 <p align="center">
@@ -31,7 +27,7 @@
 ## ✨ Features
 
 <div align="center">
-  <img src="screenshots/features.png" alt="Features" width="800"/>
+  <img src="![RegisterPage](https://github.com/user-attachments/assets/52a21c8e-9c0b-46e2-9e1d-d437b0ef5585)" alt="Features" width="800"/>
 </div>
 
 ### 🔐 Authentication
@@ -54,7 +50,7 @@
 - Real-time updates
 
 <div align="center">
-  <img src="screenshots/mobile.png" alt="Mobile View" width="300"/>
+  <img src="![MobilePage](https://github.com/user-attachments/assets/1bf5a158-18bb-45ad-86dd-d0bed719f1ee)" alt="Mobile View" width="300"/>
   <p><em>Responsive Mobile View</em></p>
 </div>
 
@@ -99,7 +95,7 @@ npm start
 ```
 
 <div align="center">
-  <img src="screenshots/setup.png" alt="Setup Guide" width="600"/>
+  <img src="![TaskModal](https://github.com/user-attachments/assets/dedb3306-2532-4302-9bb0-33116ff4b7be)" alt="Setup Guide" width="600"/>
   <p><em>Visual Setup Guide</em></p>
 </div>
 
@@ -297,19 +293,6 @@ module.exports = {
   }
 }
 ```
-
-<div align="center">
-  <img src="screenshots/theme.png" alt="Theme Customization" width="600"/>
-  <p><em>Theme Customization Options</em></p>
-</div>
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 License
 
