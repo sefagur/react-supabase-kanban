@@ -191,16 +191,93 @@ WITH CHECK (bucket_id = 'task-images');
 ```
 </details>
 
+## ⚙️ Supabase Setup
+
+1. Create a Supabase account at [https://supabase.com](https://supabase.com)
+
+2. Create a new project and get your credentials:
+   - Project URL
+   - Anon Public Key
+
+3. Create the following tables in your Supabase database:
+
+```sql
+-- Create a table for tasks
+create table tasks (
+  id uuid default uuid_generate_v4() primary key,
+  title text not null,
+  description text,
+  status text default 'todo',
+  priority text default 'medium',
+  user_id uuid references auth.users(id),
+  created_at timestamp with time zone default timezone('utc'::text, now()),
+  due_date timestamp with time zone
+);
+
+-- Enable Row Level Security (RLS)
+alter table tasks enable row level security;
+
+-- Create policy to allow users to see only their tasks
+create policy "Users can view their own tasks" on tasks
+  for select using (auth.uid() = user_id);
+
+-- Create policy to allow users to insert their own tasks
+create policy "Users can insert their own tasks" on tasks
+  for insert with check (auth.uid() = user_id);
+
+-- Create policy to allow users to update their own tasks
+create policy "Users can update their own tasks" on tasks
+  for update using (auth.uid() = user_id);
+
+-- Create policy to allow users to delete their own tasks
+create policy "Users can delete their own tasks" on tasks
+  for delete using (auth.uid() = user_id);
+```
+
+4. Create a `.env` file in the root directory:
+```env
+REACT_APP_SUPABASE_URL=your_project_url
+REACT_APP_SUPABASE_ANON_KEY=your_anon_public_key
+```
+
+## 🎮 Usage
+
+1. Start the development server:
+```bash
+npm start
+```
+
+2. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+3. Register a new account or login with existing credentials
+
+4. Start managing your tasks!
+
 ## 📱 Project Structure
 
 ```
-src/
-├── 📂 components/     # Reusable UI components
-├── 📂 pages/         # Page components
-├── 📂 context/       # React context providers
-├── 📂 hooks/         # Custom React hooks
-├── 📂 utils/         # Utility functions
-└── 📄 supabaseClient.js
+react-supabase-kanban/
+├── public/                # Static files
+├── src/                   # Source files
+│   ├── components/        # Reusable components
+│   │   ├── AuthBanner.js  # Authentication banner
+│   │   ├── DeleteModal.js # Delete confirmation modal
+│   │   ├── Layout.js      # Main layout component
+│   │   ├── TaskCard.js    # Individual task card
+│   │   └── TaskModal.js   # Task creation/edit modal
+│   ├── pages/            # Page components
+│   │   ├── Dashboard.js   # Main dashboard page
+│   │   ├── Login.js       # Login page
+│   │   └── Register.js    # Registration page
+│   ├── App.js            # Main application component
+│   ├── index.js          # Application entry point
+│   ├── index.css         # Global styles
+│   └── supabaseClient.js # Supabase configuration
+├── .env                  # Environment variables
+├── .gitignore           # Git ignore file
+├── package.json         # Project dependencies
+├── README.md           # Project documentation
+└── tailwind.config.js  # Tailwind CSS configuration
 ```
 
 ## 🎨 Customization
